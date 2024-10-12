@@ -1,12 +1,87 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
-    <div className="flex md:h-screen justify-center items-center">
-      <div>
-        <h1 className="text-black font-bold text-5xl md:text-7xl">
-          Orga<span className="text-indigo-600">nice</span>
+    <div className="flex space-y-20 p-20 flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center space-y-10">
+        <div className="flex flex-col justify-center items-center space-y-5">
+          <h1 className="text-black font-bold text-7xl md:text-9xl">
+            Orga<span className="text-indigo-600">nice</span>
+          </h1>
+
+          <p className="text-lg">
+            Stay ahead and organised with{" "}
+            <span className="font-bold">
+              Orga
+              <span className="text-indigo-600">nice</span>
+            </span>
+            !
+          </p>
+        </div>
+
+        <Button className="hover:bg-indigo-600">Get Started</Button>
+      </div>
+
+      <div className="flex flex-col space-y-10 justify-center items-center">
+        <h1 className="text-5xl text-indigo-600 font-bold">
+          Why use Organice?
         </h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Personalized User Accounts
+            </h2>
+            <p class="text-gray-600">
+              Create accounts to access your workspace and unique features.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Room and Project Creation
+            </h2>
+            <p class="text-gray-600">
+              Create separate rooms or projects for work, hobbies, and more.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Drag-and-Drop Task Management
+            </h2>
+            <p class="text-gray-600">
+              Move cards between lists by dragging and dropping with ease.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Task Deadlines and Notifications
+            </h2>
+            <p class="text-gray-600">
+              Set task deadlines and receive notifications for due dates.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Interactive Comments and Reactions
+            </h2>
+            <p class="text-gray-600">
+              Add comments and respond with emoji reactions to tasks.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-xl font-semibold mb-2">
+              Multi-language UI & Task Search
+            </h2>
+            <p class="text-gray-600">
+              Change the UI language and search for tasks quickly.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
